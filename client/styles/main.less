@@ -1,0 +1,355 @@
+@font-face {
+  font-family: 'robotobold';
+  src: url('fonts/roboto-bold-webfont.eot');
+  src: url('fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/roboto-bold-webfont.woff') format('woff'),
+  url('fonts/roboto-bold-webfont.ttf') format('truetype'),
+  url('fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'robotoregular';
+  src: url('fonts/roboto-regular-webfont.eot');
+  src: url('fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/roboto-regular-webfont.woff') format('woff'),
+  url('fonts/roboto-regular-webfont.ttf') format('truetype'),
+  url('fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'robotothin';
+  src: url('fonts/roboto-thin-webfont.eot');
+  src: url('fonts/roboto-thin-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/roboto-thin-webfont.woff') format('woff'),
+  url('fonts/roboto-thin-webfont.ttf') format('truetype'),
+  url('fonts/roboto-thin-webfont.svg#robotothin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'roboto_condensedregular';
+  src: url('fonts/robotocondensed-regular-webfont.eot');
+  src: url('fonts/robotocondensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/robotocondensed-regular-webfont.woff') format('woff'),
+  url('fonts/robotocondensed-regular-webfont.ttf') format('truetype'),
+  url('fonts/robotocondensed-regular-webfont.svg#roboto_condensedregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'roboto_condensedbold';
+  src: url('fonts/robotocondensed-bold-webfont.eot');
+  src: url('fonts/robotocondensed-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/robotocondensed-bold-webfont.woff') format('woff'),
+  url('fonts/robotocondensed-bold-webfont.ttf') format('truetype'),
+  url('fonts/robotocondensed-bold-webfont.svg#roboto_condensedbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+a{
+  text-decoration: none;
+}
+h2{
+  font-family: roboto_condensedregular;
+  font-size: 15px;
+  color: #000000;
+  margin: 5px 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+h3{
+  font-family: robotothin;
+  font-size: 21px;
+  color: #ffffff;
+  margin: 5px 0px;
+}
+h3 strong{
+  font-family: robotobold;
+}
+h4{
+  font-family: robotobold;
+  font-size: 9px;
+  color: #ffffff;
+  margin: 5px 0px;
+}
+*{
+  padding: 0px;
+  margin: 0px;
+  line-height: 120%;
+}
+html, body, .container,.ng-scope {
+  height: 100%;
+  background: #e5e5e5;
+}
+.loadingView{
+  width: 100%;
+  background: #0099f7;
+  text-align: center;
+  .wrapper{
+    padding: 50% 0 0 0;
+  }
+  .spinner {
+    margin: 100px auto;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    .spinner-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .container1 > div,.container2 > div,.container3 > div{
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+
+    border-radius: 100%;
+    position: absolute;
+    -webkit-animation: bouncedelay 1.2s infinite ease-in-out;
+    animation: bouncedelay 1.2s infinite ease-in-out;
+    /* Prevent first frame from flickering when animation starts */
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .container1{
+    .circle2 {
+      -webkit-animation-delay: -0.9s;
+      animation-delay: -0.9s;
+    }
+    .circle3 {
+      -webkit-animation-delay: -0.6s;
+      animation-delay: -0.6s;
+    }
+    .circle4 {
+      -webkit-animation-delay: -0.3s;
+      animation-delay: -0.3s;
+    }
+  }
+  .container2 {
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+    .circle1 {
+      -webkit-animation-delay: -1.1s;
+      animation-delay: -1.1s;
+    }
+    .circle2 {
+      -webkit-animation-delay: -0.8s;
+      animation-delay: -0.8s;
+    }
+    .circle3 {
+      -webkit-animation-delay: -0.5s;
+      animation-delay: -0.5s;
+    }
+    .circle4 {
+      -webkit-animation-delay: -0.2s;
+      animation-delay: -0.2s;
+    }
+  }
+  .container3 {
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+    .circle1 {
+      -webkit-animation-delay: -1.0s;
+      animation-delay: -1.0s;
+    }
+    .circle2 {
+      -webkit-animation-delay: -0.7s;
+      animation-delay: -0.7s;
+    }
+    .circle3 {
+      -webkit-animation-delay: -0.4s;
+      animation-delay: -0.4s;
+    }
+    .circle4 {
+      -webkit-animation-delay: -0.1s;
+      animation-delay: -0.1s;
+    }
+  }
+  .circle1 { top: 0; left: 0; }
+  .circle2 { top: 0; right: 0; }
+  .circle3 { right: 0; bottom: 0; }
+  .circle4 { left: 0; bottom: 0; }
+
+  h3{
+    font-family: robotothin;
+    font-size: 17px;
+    color: #ffffff;
+    margin: 5px 0px;
+  }
+  h4{
+    font-family: robotobold;
+    font-size: 9px;
+    color: #ffffff;
+    margin: 5px 0px;
+  }
+  .errModal, .EndofLoadingModal{
+    position: absolute;
+    width: 240px;
+    margin: 55% 0px 0px -120px;
+    min-height: 50%;
+    left: 50%;
+    top:0px;
+    display: none;
+    background-color: rgba(255,255,255,1);
+    border-radius: 3px;
+    .content{
+      font-family: robotothin;
+      font-size: 15px;
+      padding: 50px 35px 20px 35px;
+      color: #0099f7;
+    }
+    h1{
+      font-family: robotoregular;
+      font-size:20px;
+      margin-bottom: 20px;
+    }
+  }
+  .errModal .content p{
+    font-family: robotothin;
+    font-size:19px;
+    line-height: 130%;
+    margin-bottom: 40px;
+  }
+  .EndofLoadingModal .content p{
+    font-family: robotoregular;
+    font-size:19px;
+    line-height: 130%;
+    margin-bottom: 40px;
+  }
+}
+
+
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0.0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 40% {
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+}
+
+.appListView{
+  margin-top: -5px;
+  display:none;
+  background: #e5e5e5;
+}
+.appListView .header{
+  margin-bottom: 5px;
+}
+
+.appListView .appListPanel{
+  margin-right: 9px;
+  .adCol{
+    width: 50%;
+    float: left;
+
+    .inner{
+      margin: 0px 0px 9px 9px;
+      background: #ffffff;
+      position: relative;
+      height: 265px;
+      border-radius: 3px;
+      box-shadow: 0px 4px 0px 0px rgba(0,6,0,0.1);
+    }
+    .freeTag{
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      width: 52px;
+      height:52px;
+      background: url("../images/App-Free.png");
+      background-size: 52px 52px;
+    }
+    .wrapper{
+      padding: 20px;
+      text-align: center;
+      .adThumbnail{
+        width: 72px;
+        height: 72px;
+        border-radius: 10px;
+      }
+      p.appDesc{
+        font-family: 'robotoregular';
+        color:#969696;
+        font-size: 12px;
+        padding-bottom: 10px;
+        height:40px;
+      }
+      span.numberOfRatings{
+        font-family: 'robotoregular';
+        color:#969696;
+        font-size: 12px;
+      }
+    }
+    .trackingImg{
+      width: 1px;
+      height: 1px;
+    }
+  }
+}
+
+.btn{
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 10px auto;
+  border-radius: 2px;
+  font-family: 'roboto_condensedbold';
+  background: #0099f7;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 7px 25px;
+  box-shadow: 0px 3px 0px 0px #0089ce;
+  &:active{
+    background: #0089ce;
+    box-shadow: 0px 3px 0px 0px #0099f7;
+  }
+  &#btn_load{
+    font-size: 22px;
+    margin: 5px auto 20px 12px;
+    width: 95%;
+    display: block;
+    padding: 10px 0 ;
+    img{
+      width: 20px;
+      padding-right: 10px;
+      margin-bottom: -3px;
+    }
+  }
+}
+.clearfix{
+  clear: both;
+  &:before, &:after{
+    display: table;
+    content: " ";
+  }
+}
+/* Customize container */
+@media (min-width:481px) {
+  .appListView .appListPanel .adCol{
+    width: 33.3333%;
+
+    .inner{
+      height:295px;
+    }
+    .wrapper p.appDesc{
+      height: 65px;
+    }
+  }
+}
