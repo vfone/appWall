@@ -53,7 +53,7 @@ config.factory('settingFactory', function() {
     apisettingfactory.loadSize = 12; //initially display 12 campaigns
     apisettingfactory.bufferSize = 6; //each time will load 6 extra campaigns
     apisettingfactory.timeStamp = new Date().getTime();
-    apisettingfactory.validPeriod = 0 * 60 * 1000; //initial local data valid for about 15mins
+    apisettingfactory.validPeriod = 15 * 60 * 1000; //initial local data valid for about 15mins
 
 
     apisettingfactory.appiaURL = '&sessionId='+apisettingfactory.getSessionID()+'&siteId='+apisettingfactory.siteID+'&userAgentHeader='+apisettingfactory.UA+'&placementId='+apisettingfactory.placementId+'&totalCampaignsRequested='+apisettingfactory.loadSize;
