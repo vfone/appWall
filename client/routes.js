@@ -2,7 +2,7 @@ angular.module("appWall").config(['$urlRouterProvider', '$stateProvider', '$loca
     function($urlRouterProvider, $stateProvider, $locationProvider){
 
         $locationProvider.html5Mode(true);
-        //TODO:set loading method/template name, now is only loading more button avaiable, should consider other loading method, such as pagination to call different template in routes.js
+        //TODO:template and controller should NOT be dynamic since one app will only using single template at moment. So, no need to pass global variables from config.js but adding more rules underneath $stateProvider if route required.
         var tempName = 'appwalllist';
         var ctrlName = 'appWallCtrl';
 

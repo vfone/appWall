@@ -66,8 +66,6 @@ config.factory('settingFactory', function() {
     else{
         apisettingfactory.apiURL = apisettingfactory.appiaURL;
     }
-    //TODO:set loading method/template name, now is only loading more button avaiable, should consider other loading method, such as pagination to call different template in routes.js
-    //apisettingfactory.templateName = 'appwalllist'; //'loadMoreBtn'(default), options should contains loadAll, paginationLoad, etc
     return apisettingfactory;
 });
 
