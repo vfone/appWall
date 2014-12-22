@@ -53,10 +53,10 @@ appWall.controller('appWallCtrl', ['$scope', '$http',  'settingFactory',
                 format:'json'
             }).
                 success(function(data) {
-                    console.log(data);
                     if(settingFactory.isWeb){
                         data = data.contents; //if calling from proxy, data has contents wraps campaigns data
                     }
+                    console.log(data);
                     //workout  bufferTimes
                     $scope.bufferTimes = ~~((data.campaigns.length-$scope.loadSize)/$scope.bufferSize);
 

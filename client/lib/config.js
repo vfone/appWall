@@ -49,14 +49,14 @@ config.factory('settingFactory', function() {
         apisettingfactory.proxyURL = 'http://54.252.184.234/crossoverWP.php?url=';
     }
     apisettingfactory.placementId = 1; //not sure what this parameter does
-    apisettingfactory.loadSize = 200; //TODO: this param should be in backend web service
+    apisettingfactory.totalRequest = 200; //TODO: this param should be in backend web service
     apisettingfactory.loadSize = 12; //initially display 12 campaigns
     apisettingfactory.bufferSize = 6; //each time will load 6 extra campaigns
     apisettingfactory.timeStamp = new Date().getTime();
     apisettingfactory.validPeriod = 15 * 60 * 1000; //initial local data valid for about 15mins
 
 
-    apisettingfactory.appiaURL = '&sessionId='+apisettingfactory.getSessionID()+'&siteId='+apisettingfactory.siteID+'&userAgentHeader='+apisettingfactory.UA+'&placementId='+apisettingfactory.placementId+'&totalCampaignsRequested='+apisettingfactory.loadSize;
+    apisettingfactory.appiaURL = '&sessionId='+apisettingfactory.getSessionID()+'&siteId='+apisettingfactory.siteID+'&userAgentHeader='+apisettingfactory.UA+'&placementId='+apisettingfactory.placementId+'&totalCampaignsRequested='+apisettingfactory.totalRequest;
     if(apisettingfactory.hideCasino){
             apisettingfactory.appiaURL += apisettingfactory.CasinoCatID;
     }
