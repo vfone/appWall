@@ -247,58 +247,71 @@ html, body, .container,.ng-scope {
   margin-top: -5px;
   display:none;
   background: #e5e5e5;
-}
-.appListView .header{
-  margin-bottom: 5px;
-}
 
-.appListView .appListPanel{
-  margin-right: 9px;
-  .adCol{
-    width: 50%;
-    float: left;
-
-    .inner{
-      margin: 0px 0px 9px 9px;
-      background: #ffffff;
-      position: relative;
-      height: 265px;
-      border-radius: 3px;
-      box-shadow: 0px 4px 0px 0px rgba(0,6,0,0.1);
-    }
-    .freeTag{
+  .header{
+    margin-bottom: 5px;
+    position: relative;
+    .campCount{
       position: absolute;
-      right: 0px;
-      top: 0px;
-      width: 52px;
-      height:52px;
-      background: url("../images/App-Free.png");
-      background-size: 52px 52px;
-    }
-    .wrapper{
-      padding: 20px;
-      text-align: center;
-      .adThumbnail{
-        width: 72px;
-        height: 72px;
-        border-radius: 10px;
-      }
-      p.appDesc{
-        font-family: 'robotoregular';
-        color:#969696;
-        font-size: 12px;
-        padding-bottom: 10px;
-        height:40px;
-      }
-      span.numberOfRatings{
-        font-family: 'robotoregular';
-        color:#969696;
-        font-size: 12px;
+      bottom: 10px;
+      right: 10px;
+      font-family: 'robotothin';
+      color:#ffffff;
+      font-size: 12px;
+      span{
+        font-family: 'robotobold';
       }
     }
-    .trackingImg{
-      width: 1px;
-      height: 1px;
+  }
+
+  .appListPanel{
+    margin-right: 9px;
+    .adCol{
+      width: 50%;
+      float: left;
+
+      .inner{
+        margin: 0px 0px 9px 9px;
+        background: #ffffff;
+        position: relative;
+        height: 265px;
+        border-radius: 3px;
+        box-shadow: 0px 4px 0px 0px rgba(0,6,0,0.1);
+      }
+      .freeTag{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 52px;
+        height:52px;
+        background: url("../images/App-Free.png");
+        background-size: 52px 52px;
+      }
+      .wrapper{
+        padding: 20px;
+        text-align: center;
+        .adThumbnail{
+          width: 72px;
+          height: 72px;
+          border-radius: 10px;
+        }
+        p.appDesc{
+          font-family: 'robotoregular';
+          color:#969696;
+          font-size: 12px;
+          padding-bottom: 10px;
+          height:40px;
+        }
+        span.numberOfRatings{
+          font-family: 'robotoregular';
+          color:#969696;
+          font-size: 12px;
+        }
+      }
+      .trackingImg{
+        width: 1px;
+        height: 1px;
+      }
     }
   }
 }

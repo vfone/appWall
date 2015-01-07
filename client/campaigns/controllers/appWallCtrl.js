@@ -56,10 +56,11 @@ appWall.controller('appWallCtrl', ['$scope', '$http',  'settingFactory',
                     if(settingFactory.isWeb){
                         data = data.contents; //if calling from proxy, data has contents wraps campaigns data
                     }
+                    $scope.campCount = data.campaigns.length;
                     console.log(data);
                     //workout  bufferTimes
-                    $scope.bufferTimes = ~~((data.campaigns.length-$scope.loadSize)/$scope.bufferSize);
-
+                    //$scope.bufferTimes = ~~(($scope.campCount-$scope.loadSize)/$scope.bufferSize);
+                    $scope.bufferTimes = Math.ceil(($scope.campCount-$scope.loadSize)/$scope.bufferSize);
                     // this callback will be called asynchronously
                     // when the response is available
                     if(action === 'initLoad'){
@@ -100,7 +101,8 @@ appWall.controller('appWallCtrl', ['$scope', '$http',  'settingFactory',
         else{
             //local data still valid
             $scope.adCampaigns = JSON.parse($scope.getLocalStorage('initLoad'));
-            $scope.bufferTimes = ~~((JSON.parse($scope.getLocalStorage('allLoad')).length-$scope.loadSize)/$scope.bufferSize);
+            //$scope.bufferTimes = ~~((JSON.parse($scope.getLocalStorage('allLoad')).length-$scope.loadSize)/$scope.bufferSize);
+            $scope.bufferTimes = Math.ceil((JSON.parse($scope.getLocalStorage('allLoad')).length-$scope.loadSize)/$scope.bufferSize);
             $scope.readyToRun();
         }
 

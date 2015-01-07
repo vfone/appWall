@@ -50,6 +50,7 @@ config.factory('settingFactory', function() {
     }
     apisettingfactory.placementId = 1; //not sure what this parameter does
     apisettingfactory.totalRequest = 200; //TODO: this param should be in backend web service
+    apisettingfactory.IPAddress = ''; //TODO: this param should be in backend web service, we don't use this at moment
     apisettingfactory.loadSize = 12; //initially display 12 campaigns
     apisettingfactory.bufferSize = 6; //each time will load 6 extra campaigns
     apisettingfactory.timeStamp = new Date().getTime();
@@ -66,6 +67,7 @@ config.factory('settingFactory', function() {
     else{
         apisettingfactory.apiURL = apisettingfactory.appiaURL;
     }
+    console.log(apisettingfactory.apiURL);
     return apisettingfactory;
 });
 
